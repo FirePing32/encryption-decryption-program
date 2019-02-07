@@ -1,5 +1,6 @@
 # encryption-decryption-program
 
 Encrypt any file with a new file extension and a password
+Uses SHA256 bit encryption
 
-pip install pyAesCrypt
+<code>pip install pyAesCrypt</code>
