@@ -11,13 +11,13 @@ def encryptor():
 
     try:
 
-        buffer_size = 64 * 1024
+        buffer_size = 64 * 1024 # average buffer size
         origin_file = input("Enter name of file with its original file format : ")
         encrypted_file = input("Enter name of file with its original and new file format : ")
         password = input("Enter password with which you want to encrypt the file : ")
 
         def encryption():
-            pyAesCrypt.encryptFile(origin_file, encrypted_file, password, buffer_size)
+            pyAesCrypt.encryptFile(origin_file, encrypted_file, password, buffer_size) # encrypting file with user inputs
 
         encryption()
 
@@ -27,6 +27,7 @@ def encryptor():
 
     except:
 
+        # null or incorrect input
         pass
         print(" ")
         print("Oops! An error occured... Please try again...")

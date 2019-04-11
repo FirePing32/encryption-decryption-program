@@ -11,13 +11,13 @@ def decryptor():
 
     try:
 
-        buffer_size = 64 * 1024
+        buffer_size = 64 * 1024 # average buffer size
         encrypted_file = input("Enter name of file with its original and new file format : ")
         decrypted_file = input("Enter name of file with its original file format : ")
         password = input("Enter password to decrypt the file : ")
 
         def decryption():
-            pyAesCrypt.decryptFile(encrypted_file, decrypted_file, password, buffer_size)
+            pyAesCrypt.decryptFile(encrypted_file, decrypted_file, password, buffer_size) # decrypting file with user inputs
 
         decryption()
 
@@ -27,6 +27,7 @@ def decryptor():
 
     except:
 
+        # null or incorrect input
         pass
         print(" ")
         print("Oops! An error occured... Please try again...")
