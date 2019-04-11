@@ -1,6 +1,11 @@
-# encryption-decryption-program
+# Encryption-Decryption program
 
-Encrypt any file with a new file extension and a password<br>
-Uses SHA256 bit encryption<br>
+Protect any file with a new file extension and a password.<br>
+Uses ``AES256-CBC`` to encrypt/decrypt files.
 
-<code>pip install pyAesCrypt</code>
+## Requirements
++   ``pip install pyAesCrypt``
+
+## Note
++   You can change the value of ``buffer_size`` to minimize per-call overheads.
++   Place the file which is to be encrypted/decrypted in the root directory.
